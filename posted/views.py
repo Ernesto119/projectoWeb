@@ -5,6 +5,6 @@ def posted(request):
     posts = Post.objects.all()
     return render(request, 'home.html',{'posts':posts})
 
-def post_detail(request, post_id):
-    post = get_object_or_404(Post, pk=post_id)
+def post_detail(request, slug_url):
+    post = Post.objects.get(slug=slug_url)
     return render(request, 'postdt.html',{'post':post})
