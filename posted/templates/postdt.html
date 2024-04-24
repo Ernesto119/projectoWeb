@@ -1,0 +1,24 @@
+{% extends 'layouts/base.html' %} {% block content %}
+
+<div class="container-fluid">
+    <div class="row justify-content-center"> 
+        <div class="col">
+            <h3>Hello</h3>
+        </div>
+        <div class="col-6">
+            <h2>{{post.title}}</h2>
+            <p class="mb-5" >{{posts.date}}</p>
+            {% if post.image %}
+            <img src="{{post.image.url}}" alt="imagen">
+            {% endif %}
+            <br>
+            {{post.publish|linebreaksbr}}
+            <!-- linebreaksbr and linebreaks is for jump line -->
+            <!-- to remind django filter -->
+        </div>
+        <div class="col text-end">
+            <h2>hola</h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
