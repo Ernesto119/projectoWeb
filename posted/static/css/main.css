@@ -1,25 +1,36 @@
 img {
-    display: block;
-    margin: auto;
-    max-width: 800px;
-    max-height: 600px;
-    margin: auto;
+  display: block;
+  margin: auto;
+  max-width: 800px;
+  max-height: 600px;
+  margin: auto;
 }
 
 .container-fluid {
-    overflow: hidden;
+  word-wrap: break-word;
 }
+
 .my-back {
-    box-sizing:border-box;
-    width: 1920px;
-    height: auto;
+  box-sizing: border-box;
+  width: 1920px;
+  height: auto;
 }
 
 .bg {
-    color: aliceblue;
-    background-color: gray;
+  color: aliceblue;
+  background-color: gray;
 }
 
 .hide-te {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+.card-img-top {
+  max-block-size: 220px;
+  min-height: 220px;
+}
+
+
+.col-sm-4{
+    margin-bottom: 30px;
 }
