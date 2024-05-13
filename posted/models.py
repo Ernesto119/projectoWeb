@@ -13,5 +13,5 @@ class Post(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(self.title + "-" + str(self.date))
-        return super().save(*args, **kwargs)
+            self.slug = slugify(self.title + "-" + self.date)
+        super().save(*args, **kwargs)

@@ -1,6 +1,8 @@
 # Utiliza una imagen de Python como base
 FROM python:3.10.12-alpine3.17
 
+ENV PYTHONUNBUFFERED=1
+
 # Establece el directorio de trabajo en /app
 WORKDIR /app
 
