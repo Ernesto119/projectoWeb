@@ -1,9 +1,21 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Post
 from django.http import Http404
+from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import login, authenticate, logout
 
+def sign_up(request):
+    pass
 
-def posted(request):
+def sign_in(request):
+    pass
+
+def exit(request):
+    logout(request)
+    return redirect("")
+
+def home(request):
     posts = Post.objects.all().order_by("-id")
     return render(request, "home.html", {"posts": posts})
 
